@@ -23,5 +23,6 @@
 
 -(UIView*)setupWithQuestion:(NSString*)questionString questionNumber:(NSString*)questionNumber MultiAnswers:(NSArray*) answerStrings mode:(multipleChoiceMode)mode;
 -(NSMutableArray*)results;
+-(void)setupDimensions;
 
 @end

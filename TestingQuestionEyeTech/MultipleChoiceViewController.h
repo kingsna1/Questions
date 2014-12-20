@@ -14,8 +14,11 @@ typedef enum multipleChoiceMode{MCMOne, MCMMulti, MCMZeroOrOne, MCMZeroOrMulti}m
 {
     @protected
     //All of the major sizes of the elements
+    
     float screenWidth;
     float screenHeight;
+    float singleAnsWidth;
+    
     float wSpaceScrToAns;
     float wSpaceAnsToBut;
     float hSpaceAnstoAns;
@@ -32,6 +35,6 @@ typedef enum multipleChoiceMode{MCMOne, MCMMulti, MCMZeroOrOne, MCMZeroOrMulti}m
 
 -(UIView*)setupWithMultiAnswers:(NSArray*) answerStrings mode:(multipleChoiceMode)mode
 ;
-
+-(void)updateAllButtons;
 
 @end

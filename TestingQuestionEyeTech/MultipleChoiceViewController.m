@@ -53,6 +53,37 @@
     
     //---------- position the answers------//
     
+    
+    
+    self.encompassingView=[self positionAllViews:arrayOfAnswerViews];
+    
+    return self.encompassingView;
+}
+
+
+-(void)setupDimensions
+{
+
+    
+    //All of the major sizes of the elements
+    singleAnsWidth=768;
+    screenWidth=768;
+    screenHeight=1024;
+    wSpaceScrToAns=100;
+    wSpaceAnsToBut=70;
+    hSpaceAnstoAns=10;
+    
+    ansWidth=550;
+    butWidth=30;
+    butHeight=30;
+
+}
+
+-(UIView*)positionAllViews:(NSMutableArray*)arrayOfAnswerViews
+{
+    //---------- position the answers------//
+    
+    
     UIView* encompassingView=[[UIView alloc] init];
     float yPos=0;
     for (int i=0; i<[arrayOfAnswerViews count]; i++)
@@ -73,29 +104,12 @@
     for (int i=0; i<[arrayOfAnswerViews count]; i++)
     {
         [encompassingView addSubview:[arrayOfAnswerViews objectAtIndex:i]];
-       
+        
     }
     [self updateAllButtons];
     self.encompassingView=encompassingView;
     
     return encompassingView;
-}
-
-
--(void)setupDimensions
-{
-
-    
-    //All of the major sizes of the elements
-    screenWidth=768;
-    screenHeight=1024;
-    wSpaceScrToAns=100;
-    wSpaceAnsToBut=70;
-    hSpaceAnstoAns=10;
-    
-    ansWidth=550;
-    butWidth=30;
-    butHeight=30;
 
 }
 
@@ -153,7 +167,7 @@
         yHeight=answerLabel.bounds.size.height;
     }
     
-    CGRect encompRect=CGRectMake(0, 0, screenWidth, yHeight);
+    CGRect encompRect=CGRectMake(0, 0,singleAnsWidth, yHeight);
     encompassingView.frame=encompRect;
     
     [encompassingView addSubview:answerLabel];

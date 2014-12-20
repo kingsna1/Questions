@@ -10,6 +10,7 @@
 #import "QuestionViewController.h"
 #import "MultipleChoiceViewController.h"
 #import "MultipleChoiceQuestion.h"
+#import "MCQHoriz.h"
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *questionText;
 @property (strong, nonatomic) NSObject* hold;

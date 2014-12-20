@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFECA3AA1A461CC700F1F277 /* MCHorizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFECA3A91A461CC700F1F277 /* MCHorizViewController.m */; };
+		DFECA3AD1A462E3900F1F277 /* MCQHoriz.m in Sources */ = {isa = PBXBuildFile; fileRef = DFECA3AC1A462E3900F1F277 /* MCQHoriz.m */; };
 		DFFB7C221A42F41F00536861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB7C211A42F41F00536861 /* main.m */; };
 		DFFB7C251A42F41F00536861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB7C241A42F41F00536861 /* AppDelegate.m */; };
 		DFFB7C281A42F41F00536861 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB7C271A42F41F00536861 /* ViewController.m */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DFECA3A81A461CC700F1F277 /* MCHorizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCHorizViewController.h; path = TestingQuestionEyeTech/MCHorizViewController.h; sourceTree = "<group>"; };
+		DFECA3A91A461CC700F1F277 /* MCHorizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCHorizViewController.m; path = TestingQuestionEyeTech/MCHorizViewController.m; sourceTree = "<group>"; };
+		DFECA3AB1A462E3900F1F277 /* MCQHoriz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCQHoriz.h; sourceTree = "<group>"; };
+		DFECA3AC1A462E3900F1F277 /* MCQHoriz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCQHoriz.m; sourceTree = "<group>"; };
 		DFFB7C1C1A42F41F00536861 /* TestingQuestionEyeTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingQuestionEyeTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFB7C201A42F41F00536861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFFB7C211A42F41F00536861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,8 +82,12 @@
 		DFFB7C131A42F41F00536861 = {
 			isa = PBXGroup;
 			children = (
+				DFECA3A81A461CC700F1F277 /* MCHorizViewController.h */,
+				DFECA3A91A461CC700F1F277 /* MCHorizViewController.m */,
 				DFFB7C521A44860900536861 /* MultipleChoiceQuestion.h */,
 				DFFB7C531A44860900536861 /* MultipleChoiceQuestion.m */,
+				DFECA3AB1A462E3900F1F277 /* MCQHoriz.h */,
+				DFECA3AC1A462E3900F1F277 /* MCQHoriz.m */,
 				DFFB7C511A447F3C00536861 /* Graphics */,
 				DFFB7C471A430F4800536861 /* QuestionViewController.h */,
 				DFFB7C481A430F4800536861 /* QuestionViewController.m */,
@@ -252,6 +262,8 @@
 			files = (
 				DFFB7C281A42F41F00536861 /* ViewController.m in Sources */,
 				DFFB7C251A42F41F00536861 /* AppDelegate.m in Sources */,
+				DFECA3AD1A462E3900F1F277 /* MCQHoriz.m in Sources */,
+				DFECA3AA1A461CC700F1F277 /* MCHorizViewController.m in Sources */,
 				DFFB7C541A44860900536861 /* MultipleChoiceQuestion.m in Sources */,
 				DFFB7C4C1A442CDE00536861 /* MultipleChoiceViewController.m in Sources */,
 				DFFB7C491A430F4800536861 /* QuestionViewController.m in Sources */,
