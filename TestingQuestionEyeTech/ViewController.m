@@ -28,9 +28,12 @@
 -(void)setup{
     
     
-    MCQHoriz* ans1=[[MCQHoriz alloc]init];
+    //MCQHoriz* ans1=[[MCQHoriz alloc]init];
+    MultipleChoiceQuestion* ans1=[[MultipleChoiceQuestion alloc]init];
+
+    
     self.hold=(NSObject*)ans1;
-    NSArray* answerArray=[[NSArray alloc]initWithObjects:@"Most of the time",@"All of the time",@"Not all of the time but some of the time", nil];
+    NSArray* answerArray=[[NSArray alloc]initWithObjects:@"Most of the time",@"All of the time",@"Not all of the time but some of the time",@"guaranteed holiday", nil];
     UIView* toDisplay=[ans1 setupWithQuestion:@"where am i now?" questionNumber:@"2)" MultiAnswers:answerArray mode:MCMMulti];
     [self.view addSubview:toDisplay];
     [self.view setNeedsDisplay];

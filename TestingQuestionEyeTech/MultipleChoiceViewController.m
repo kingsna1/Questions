@@ -86,10 +86,13 @@
     
     UIView* encompassingView=[[UIView alloc] init];
     float yPos=0;
+    float currentHeight=0;
     for (int i=0; i<[arrayOfAnswerViews count]; i++)
     {
         UIView* currentAnswer=[arrayOfAnswerViews objectAtIndex:i];
         CGRect ansRect=CGRectMake(0, yPos, currentAnswer.bounds.size.width, currentAnswer.bounds.size.height);
+        currentHeight=yPos+currentAnswer.bounds.size.height;
+
         currentAnswer.frame=ansRect;
         
         yPos=yPos+currentAnswer.bounds.size.height+hSpaceAnstoAns;
@@ -98,7 +101,7 @@
     
     
     //----add answers to positioning view---///
-    encompassingView.frame=CGRectMake(0, 0, screenWidth, yPos-hSpaceAnstoAns);
+    encompassingView.frame=CGRectMake(0, 0, screenWidth, currentHeight);
     
     
     for (int i=0; i<[arrayOfAnswerViews count]; i++)
@@ -176,6 +179,8 @@
     return encompassingView;
 }
 -(void)tickButtonPressed:(id)object{
+    
+    // this configures how the mode affects the button display
 
     multipleChoiceMode myChoice=MCMMulti;
     
@@ -240,6 +245,9 @@
     
 }
 -(void)updateAllButtons{
+    
+    //---- for each potential answer , check the stored data and then displey
+    // the right buttons
     
     for (int i=0; i<[self.arrayOfViews count]; i++)
     {
