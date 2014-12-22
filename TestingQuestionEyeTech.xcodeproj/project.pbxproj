@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0367A61A4814D5009D8C21 /* MatrixSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0367A51A4814D5009D8C21 /* MatrixSingle.m */; };
 		DFECA3AA1A461CC700F1F277 /* MCHorizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFECA3A91A461CC700F1F277 /* MCHorizViewController.m */; };
 		DFECA3AD1A462E3900F1F277 /* MCQHoriz.m in Sources */ = {isa = PBXBuildFile; fileRef = DFECA3AC1A462E3900F1F277 /* MCQHoriz.m */; };
 		DFFB7C221A42F41F00536861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB7C211A42F41F00536861 /* main.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF0367A41A4814D5009D8C21 /* MatrixSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixSingle.h; sourceTree = "<group>"; };
+		DF0367A51A4814D5009D8C21 /* MatrixSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixSingle.m; sourceTree = "<group>"; };
 		DFECA3A81A461CC700F1F277 /* MCHorizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCHorizViewController.h; path = TestingQuestionEyeTech/MCHorizViewController.h; sourceTree = "<group>"; };
 		DFECA3A91A461CC700F1F277 /* MCHorizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCHorizViewController.m; path = TestingQuestionEyeTech/MCHorizViewController.m; sourceTree = "<group>"; };
 		DFECA3AB1A462E3900F1F277 /* MCQHoriz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCQHoriz.h; sourceTree = "<group>"; };
@@ -79,20 +82,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DFFB7C131A42F41F00536861 = {
+		DF0367A31A4813CB009D8C21 /* MultipleChoiceClasses */ = {
 			isa = PBXGroup;
 			children = (
 				DFECA3A81A461CC700F1F277 /* MCHorizViewController.h */,
 				DFECA3A91A461CC700F1F277 /* MCHorizViewController.m */,
-				DFFB7C521A44860900536861 /* MultipleChoiceQuestion.h */,
-				DFFB7C531A44860900536861 /* MultipleChoiceQuestion.m */,
-				DFECA3AB1A462E3900F1F277 /* MCQHoriz.h */,
-				DFECA3AC1A462E3900F1F277 /* MCQHoriz.m */,
-				DFFB7C511A447F3C00536861 /* Graphics */,
-				DFFB7C471A430F4800536861 /* QuestionViewController.h */,
-				DFFB7C481A430F4800536861 /* QuestionViewController.m */,
 				DFFB7C4A1A442CDD00536861 /* MultipleChoiceViewController.h */,
 				DFFB7C4B1A442CDE00536861 /* MultipleChoiceViewController.m */,
+				DFFB7C521A44860900536861 /* MultipleChoiceQuestion.h */,
+				DFFB7C531A44860900536861 /* MultipleChoiceQuestion.m */,
+				DFFB7C471A430F4800536861 /* QuestionViewController.h */,
+				DFFB7C481A430F4800536861 /* QuestionViewController.m */,
+				DFECA3AB1A462E3900F1F277 /* MCQHoriz.h */,
+				DFECA3AC1A462E3900F1F277 /* MCQHoriz.m */,
+			);
+			name = MultipleChoiceClasses;
+			sourceTree = "<group>";
+		};
+		DFFB7C131A42F41F00536861 = {
+			isa = PBXGroup;
+			children = (
+				DF0367A41A4814D5009D8C21 /* MatrixSingle.h */,
+				DF0367A51A4814D5009D8C21 /* MatrixSingle.m */,
+				DF0367A31A4813CB009D8C21 /* MultipleChoiceClasses */,
+				DFFB7C511A447F3C00536861 /* Graphics */,
 				DFFB7C1E1A42F41F00536861 /* TestingQuestionEyeTech */,
 				DFFB7C381A42F41F00536861 /* TestingQuestionEyeTechTests */,
 				DFFB7C1D1A42F41F00536861 /* Products */,
@@ -267,6 +280,7 @@
 				DFFB7C541A44860900536861 /* MultipleChoiceQuestion.m in Sources */,
 				DFFB7C4C1A442CDE00536861 /* MultipleChoiceViewController.m in Sources */,
 				DFFB7C491A430F4800536861 /* QuestionViewController.m in Sources */,
+				DF0367A61A4814D5009D8C21 /* MatrixSingle.m in Sources */,
 				DFFB7C221A42F41F00536861 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
